@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NY Times Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">New York Times Search</h1>
+        </div>
+    </div>
+    <br>
+
+    <div container="overall-container">
+        <h1>Search Parameters</h1>
+        <form>
+            <div class="form-group">
+                <label for="search-term">Search Term:</label>
+                <input type="search-term" class="form-control" id="examplesearchterm" aria-describedby="search-terms">
+
+            </div>
+            <---manipulate to dropdown options--->
+                <div class="form-group">
+                    <label for="records">Number of Records to Retreive:</label>
+                    <input type="list of records" class="form-control" id="recordinput">
+                    <select id="country" name="country">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="start-year">Start Year (Optional):</label>
+                    <input type="starting-year" class="form-control" id="start-the-year">
+                </div>
+                <div class="form-group">
+                    <label for="end-year">End Year (Optional):</label>
+                    <input type="ending year" class="form-control" id="end-the-year">
+                </div>
+                <button id="search">Search</button>
+                <button id="clear-results">Clear Results</button>
+
+
+        </form>
+        <br>
+    </div>
+    <div container="footer-section">
+        <h1>Top Articles</h1>
+        <br>
+
+        <p id="top-article"></p>
+
+        <footer>
+
+
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
